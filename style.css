@@ -1,49 +1,62 @@
-/* ====== Danny's Vault CSS ====== */
+/* ====== Danny's Vault: Sleek Theme CSS ====== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap');
 
-/* ====== Reset & body ====== */
+/* ====== Reset & Body ====== */
 body {
   background-color: #12141a;
   color: #e6e6e6;
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* ====== Headings ====== */
+/* ====== Typography ====== */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  color: #ffffff;
   text-align: center;
 }
 
-/* ====== Nav ====== */
-nav {
-  padding: 1rem 0;
+p {
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem auto;
   text-align: center;
+  color: #d1d5db; /* softer gray for readability */
+}
+
+/* ====== Nav: Pill Buttons ====== */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  gap: 1rem;
 }
 
 nav a {
-  color: #4fd1c5;
   text-decoration: none;
-  margin: 0 1rem;
   font-weight: 500;
-  padding: 0.25rem 0.5rem;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  background-color: #1a1c24;
+  color: #4fd1c5;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
 nav a:hover {
-  border-bottom: 2px solid #4fd1c5;
+  background-color: #4fd1c5;
+  color: #12141a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* ====== Main content wrapper ====== */
+/* ====== Main wrapper ====== */
 main {
   max-width: 900px;
   width: 100%;
@@ -61,51 +74,56 @@ main {
   display: inline-block;
   background-color: #4fd1c5;
   color: #12141a;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
 .cta:hover {
   background-color: #3bb3aa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/* ====== Work page cards ====== */
+/* ====== Work Projects ====== */
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .project-card {
   background-color: #1a1c24;
-  padding: 1.5rem;
-  border-radius: 8px;
+  padding: 2rem;
+  border-radius: 12px;
   max-width: 600px;
   width: 100%;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .project-card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-/* ====== Links in content ====== */
+/* ====== Buttons & Links ====== */
 a {
   color: #4fd1c5;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* ====== Paragraphs ====== */
-p {
-  max-width: 700px;
-  margin: 0.5rem auto 1.5rem auto;
-  text-align: center;
+/* ====== Misc spacing ====== */
+section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
