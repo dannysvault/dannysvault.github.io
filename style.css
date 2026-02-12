@@ -1,0 +1,49 @@
+/* ====== Danny's Vault CSS ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap');
+
+body {
+  background-color: #12141a;
+  color: #e6e6e6;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+nav {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #4fd1c5;
+  text-decoration: none;
+  margin: 0 0.8rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+p {
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem auto;
+}
+
+a {
+  color: #4fd1c5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
