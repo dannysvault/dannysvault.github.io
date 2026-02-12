@@ -2,22 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700&display=swap');
 
+/* ====== Reset & body ====== */
 body {
   background-color: #12141a;
   color: #e6e6e6;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* ====== Headings ====== */
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   color: #ffffff;
+  text-align: center;
 }
 
+/* ====== Nav ====== */
 nav {
   padding: 1rem 0;
   text-align: center;
@@ -26,19 +33,67 @@ nav {
 nav a {
   color: #4fd1c5;
   text-decoration: none;
-  margin: 0 0.8rem;
+  margin: 0 1rem;
   font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #4fd1c5;
 }
 
-p {
-  max-width: 700px;
-  margin: 0.5rem auto 1.5rem auto;
+/* ====== Main content wrapper ====== */
+main {
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem 1rem;
 }
 
+/* ====== Homepage Hero ====== */
+.tagline {
+  font-size: 1.25rem;
+  color: #b0bec5;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #4fd1c5;
+  color: #12141a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #3bb3aa;
+}
+
+/* ====== Work page cards ====== */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.project-card {
+  background-color: #1a1c24;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ====== Links in content ====== */
 a {
   color: #4fd1c5;
   text-decoration: none;
@@ -47,15 +102,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* ====== Layout polish ====== */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-main {
-  max-width: 900px;
-  width: 100%;
-  padding: 2rem 1rem;
+/* ====== Paragraphs ====== */
+p {
+  max-width: 700px;
+  margin: 0.5rem auto 1.5rem auto;
+  text-align: center;
 }
